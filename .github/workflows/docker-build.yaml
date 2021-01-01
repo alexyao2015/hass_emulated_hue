@@ -295,7 +295,7 @@ jobs:
           }
           - {
             variant: v8,
-            arch: arm64
+            arch: arm64,
             arch_friendly: arm64
           }
     steps:
