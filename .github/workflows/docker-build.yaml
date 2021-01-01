@@ -22,7 +22,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile.test
-          platforms: linux/amd64,linux/arm/v6
+          platforms: linux/arm/v6
           load: true
           tags: test:ci
 
@@ -30,4 +30,3 @@ jobs:
         run: |
           docker images
           docker image inspect test:ci
-          docker manifest inspect --verbose test:ci
