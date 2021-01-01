@@ -43,4 +43,4 @@ jobs:
       - name: Inspect
         run: |
           docker images
-          docker image inspect test:ci
+          docker image inspect hass_emulated_hue:ci-${{ matrix.arch_friendly }}
