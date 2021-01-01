@@ -40,6 +40,10 @@ jobs:
           load: true
           tags: hass_emulated_hue:ci
 
+      - name: Inspect
+        run: |
+          docker image inspect hass_emulated_hue:ci
+
       - name: Save tarball
         run: |
           docker save --output output.tar hass_emulated_hue:ci
